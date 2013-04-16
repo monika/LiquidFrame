@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Liquid iFrames</title>
+
+    <link rel="stylesheet" href="articles.css">
+
+</head>
+<body>
+
+	<h1>All My Favorite Videos</h1>
+
+	<div id="videos">
+
+		<article class="container video">
+
+			<iframe class="fluid" src="http://player.vimeo.com/video/26387266" width="500" height="234" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+			
+		</article>
+
+		<article class="container video">
+
+			<iframe class="fluid" width="560" height="315" src="http://www.youtube.com/embed/LuDN2bCIyus" frameborder="0" allowfullscreen></iframe>
+			
+		</article>
+
+		<article class="container video">
+
+			<iframe class="fluid" src="http://www.collegehumor.com/e/3499899" width="600" height="369" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+			
+		</article>
+
+		<article class="container video">
+
+			<iframe class="fluid" width="512" height="288" src="http://www.hulu.com/embed.html?eid=m1vleasrbnthohbcrhk59w" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>
+			
+		</article>
+
+		<article class="container video">
+
+			<iframe class="fluid" width="624" height="351" scrolling="no" frameborder="0" src="http://screen.yahoo.com/kung-fu-grandpa-074500788.html?format=embed&player_autoplay=false"></iframe>
+			
+		</article>
+
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="jquery.liquidFrame.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+
+        $('.fluid').liquidFrame({ liquidContainer: ".video" });
+
+    </script>
+
+</body>
+</html>
