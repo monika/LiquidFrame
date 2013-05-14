@@ -4,7 +4,7 @@ Create a liquid iframe that continually resizes itself, as the browser resizes, 
 
 ## Usage
 
-Select iframe you want to be liquified and run the `.liquidFrame()` method on it:
+Select the iframe you want to be liquified and run the `.liquidFrame()` method on it:
 
 ```html
 <article class="container video">
