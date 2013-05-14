@@ -10,7 +10,7 @@
         // Set defaults
         var defaults = {
 
-            liquidContainer: ".container",
+            liquidContainer: $(this).parent()
 
         };
 
@@ -24,14 +24,14 @@
             // Find Aspect Ratio Video
             $this.data('aspectRatio', this.height / this.width);
 
+            // Remove Embedded Height and Width on Video
+            $this.removeAttr('height').removeAttr('width');
+
             // Set Sizes on Window Resize
             $(window).resize(function() {
 
                 // Get Fluid Container Width
                 var containerWidth = $(parameters.liquidContainer).width();
-
-                // Remove Embedded Height and Width on Video
-                $this.removeAttr('height').removeAttr('width');
 
                 // Resize video according to container width and aspect ratio
                 $this.width(containerWidth).height(containerWidth * $this.data('aspectRatio'));
